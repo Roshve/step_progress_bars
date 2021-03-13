@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>REGISTRO DE USUARIOS</header>
+        <div class="form-princ">
+            <form action="#">
+                
+                <!-- Pagina 1 -->
+                <div class="pagina">
+                    <div class="titulo">Informacion Principal</div>
+                    <div class="campo">
+                        <div class="label">Nombres: </div>
+                        <input type="text" id="nombres" placeholder="Nombres">
+                    </div>
+                    <div class="campo">
+                        <div class="label">Apellido Paterno: </div>
+                        <input type="text" id="apellido1" placeholder="Apellido Paterno">
+                    </div>
+                    <div class="campo">
+                        <div class="label">Apellido Materno: </div>
+                        <input type="text" id="apellido2" placeholder="Apellido Materno">
+                    </div>
+                    <div class="campo">
+                        <button>Siguiente</button>
+                    </div>
+                </div>
+                <!-- Pagina 2 -->
+                <div class="pagina">
+                    <div class="titulo">Informacion Secundaria</div>
+                    <div class="campo">
+                        <div class="label">Fecha Nacimiento: </div>
+                        <input type="date" id="fechaNac" max="2010-12-31" value="2010-02-03">
+                    </div>
+                    <div class="campo">
+                        <div class="label">Sexo: </div>
+                        <select id="sexo">
+                            <option value="-1" disabled selected>Escoge una opción.</option>
+                            <option value="0">Masculino</option>
+                            <option value="1">Femenino</option>
+                            <option value="2">Sin especificar</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <button class="volver-pag1 volver">Atrás</button>
+                        <button class="adelante-pag3 adelante">Siguiente</button>
+                    </div>
+                </div>
+
+                <!-- Pagina 3 -->
+                <div class="pagina">
+                    <div class="titulo">Informacion Contacto</div>
+                    <div class="campo">
+                        <div class="label">Correo electrónico: </div>
+                        <input type="email" id="correo" placeholder="Correo Electrónico">
+                    </div>
+                    <div class="campo">
+                        <div class="label">Número telefonico: </div>
+                        <input type="text" id="numCel" placeholder="Número Telefónico">
+                    </div>
+                    <div class="campo">
+                        <button class="volver-pag2 volver">Atrás</button>
+                        <button class="adelante-pag4 adelante">Siguiente</button>
+                    </div>
+                </div>
+
+                <!-- Pagina 4 -->
+                <div class="pagina">
+                    <div class="titulo">Informacion de inicio de sesión</div>
+                    <div class="campo">
+                        <div class="label">Nombre de usuario: </div>
+                        <input type="text" id="usuario" placeholder="Nombre de usuario">
+                    </div>
+                    <div class="campo">
+                        <div class="label">Contraseña: </div>
+                        <input type="password" id="contra" placeholder="Contraseña">
+                    </div>
+                    <div class="campo">
+                        <button class="volver-pag3 volver">Atrás</button>
+                        <button class="Fin">Siguiente</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

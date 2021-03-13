@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/user_news_form.css" />
+    <title>Formulario | Ingreso</title>
+  </head>
+  <body>
+    <!-- Formulario -->
+
+    <main>
+      <div class="container shadow-lg my-5 bg-white rounded">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col" id="first-hired-box">
+              <h1 class="mt-4">Formulario de nuevos ingresos vs0.1</h1>
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <form id="regForm" method="POST" action="#">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h4 class="mb-4 text-uppercase text-center">
+                  Si eres Jefe de sector ingresa tus datos aqui
+                </h4>
+                <hr class="mb-4" />
+              </div>
+
+              <div class="row">
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="email"
+                    placeholder="Email *"
+                    name="email"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Nombre *"
+                    name="name"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Apellido *"
+                    name="lastname"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="(CC) Centro de costo *"
+                    name="centro_de_costo"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Producto *"
+                    name="producto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <h4 class="mb-4 text-uppercase text-center">
+                  Ingrese los datos del nuevo ingreso
+                </h4>
+                <hr class="mb-4" />
+              </div>
+
+              <div class="row">
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Nombre"
+                    name="name"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Apellido"
+                    name="lastname"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Consultora"
+                    name="consultora"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="DNI"
+                    name="DNI"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="Perfil similar a:"
+                    name="email"
+                  />
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                  <input
+                    class="form-control border-mda"
+                    type="text"
+                    placeholder="¿Remplaza a alguien?"
+                    name="email"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                <h4 class="my-4 text-uppercase text-center">Equipo de trabajo</h4>
+                <hr class="mb-4" />
+                </div>
+            </div>
+            <div class="row">
+              <div class="col border">
+                <label>
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/notebook.jpg"
+                    alt="notebook"
+                  />
+                  <input
+                    type="radio"
+                    name="options"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <strong>Notebook</strong>
+                </label>
+              </div>
+
+              <div class="col border">
+                <label>
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/pc.jpg"
+                    alt="notebook"
+                  />
+                  <input
+                    type="radio"
+                    name="options"
+                    id="option2"
+                    autocomplete="off"
+                  />
+                  <strong>PC</strong>
+                </label>
+              </div>
+
+              <div class="col border">
+                <label>
+                  <img
+                    class="card-img-top"
+                    src="../assets/img/mac_all_in_one.jpg"
+                    alt="notebook"
+                  />
+                  <input
+                    type="radio"
+                    name="options"
+                    id="option3"
+                    autocomplete="off"
+                  />
+                  <strong>MAC</strong>
+                </label>
+              </div>
+
+              <div class="col border">
+                <label>
+                  <input
+                    type="radio"
+                    name="options"
+                    id="option4"
+                    autocomplete="off"
+                  />
+                  <strong>NO</strong>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <p class="my-4 text-uppercase text-center">
+                        ¿equipamiento reutilizado por el sector?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <label>
+                        <input
+                        type="radio"
+                    name="options2"
+                    id="11"
+                    autocomplete="off"
+                     />SI
+                    </label>
+                </div>
+
+                <div class="col">
+                    <label>
+                    <input
+                        type="radio"
+                        name="options2"
+                        id="12"
+                        autocomplete="off"
+                        checked
+                    />NO
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-uppercase my-4 text-center">equipo celular</h4>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="14"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="13"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="my-4 text-uppercase text-center">
+                ¿equipamiento reutilizado por el sector?
+              </p>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="11"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="12"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+            
+            <!-- /Fourth-Form -->
+
+            <div class="row">
+                <div class="col">
+                <h4 class="my-4 text-uppercase text-center">Linea telefonica</h4>
+                <p class="my-4 text-uppercase text-center">
+                    ACLARAR SI ES LINEA NUEVA O CESION DE LINEA A LN. (SOLO MOVISTAR
+                    o CLARO)
+                </p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="14"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="13"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+              <p class="my-4 text-uppercase text-center">
+                ¿equipamiento reutilizado por el sector?
+              </p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="11"
+                    autocomplete="off"
+                  />SI
+                </label>
+            </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="12"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+            <div class="col">
+                <h4 class="my-4 text-uppercase text-center">telefono fijo</h4>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="14"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="13"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p class="text-uppercase my-4 text-center">
+                        ¿equipamiento reutilizado por el sector?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="11"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options2"
+                    id="12"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+              <h4 class="my-4 text-uppercase text-center">
+                ¿Los equipos se encuentra presupuestados?
+              </h4>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options1"
+                    id="O1"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options1"
+                    id="O2"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <!-- /Seventh-Form -->
+
+            <!-- Eighth-Form -->
+
+            <div class="row">
+                <div class="col">
+              <h4 class="text-uppercase my-4 text-center">
+                Licencia de Correo Office 365
+              </h4>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options1"
+                    id="O1"
+                    autocomplete="off"
+                  />SI
+                </label>
+              </div>
+
+              <div class="col">
+                <label>
+                  <input
+                    type="radio"
+                    name="options1"
+                    id="O2"
+                    autocomplete="off"
+                    checked
+                  />NO
+                </label>
+              </div>
+            </div>
+
+            <!-- /Eighth-Form -->
+
+            <div style="overflow: auto">
+              <div style="float: right">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="prevBtn"
+                  onclick="nextPrev(-1)"
+                >
+                  Previous
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="nextBtn"
+                  onclick="nextPrev(1)"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/user_news_form.js"></script>
+  </body>
+</html>

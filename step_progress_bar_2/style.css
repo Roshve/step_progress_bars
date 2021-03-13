@@ -1,0 +1,48 @@
+body{
+    background-image: url(back-img.jpg) ;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: #01ab97;
+}
+
+.progress{
+    margin: 300px auto;
+
+}
+
+.progress img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 200px;
+}
+ul li .fa{
+    background: #ccc;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+ul li .fa::after{
+    content: '';
+    background: #ccc;
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    z-index: -1;
+}
+
+ul li:nth-child(3) .fa{
+    background: #148e14;
+}
