@@ -119,3 +119,98 @@ form .pagina .btns button.volver{
 form .pagina .btns button.adelante{
     margin-left: 3px;
 }
+
+.container .progress-bar{
+    display: flex;
+    margin: 40px 0;
+}
+
+.container .progress-bar .paso{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar .paso p{
+    font-size: 18px;
+    font-weight:500;
+    color: blue;
+    margin-bottom: 8px;
+}
+
+.progress-bar .paso .num{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar .paso .nume span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.progress-bar .paso .check{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.progress-bar .paso .num:before,
+.progress-bar .paso .num:after{
+    position: absolute;
+    content: '';
+    width: 44px;
+    height: 3px;
+    bottom: 11px;
+    right: -53px;
+    background: blue;
+}
+
+.progress-bar .paso:last-child .num:before,
+.progress-bar .paso:last-child .num:after{
+    display: none;
+}
+
+.progress-bar .paso .num:after{
+    background: #DB2A31;
+    animation: mov_Linea 0.3s linear forwards ;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes mov_Linea{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+/* estilos para mostrar la contraseña */
+
+.ojitos{
+    position: absolute;
+    top: 29%;
+    right: 7px;
+    font-size: 18px;
+    color: #0E2C48;
+}
+
+#ocultar{
+    display: none;
+}
+
+#mostrar, #ocultar{
+    cursor: pointer;
+}
