@@ -9,6 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    <div>
+        <a href="index.html" class="btn-cancelar" title="Cancelar Registro">X</a>
+    </div>
+    
     <div class="container">
         <header>REGISTRO DE USUARIOS</header>
         
@@ -50,18 +55,18 @@
                 <div class="pagina movPag">
                     <div class="titulo">Informacion Principal</div>
                     <div class="campo">
-                        <div class="label">Nombres: </div>
+                        <div class="label">Nombres: <b class="error" id="nombres-error"></b></div>
                         <input type="text" id="nombres" placeholder="Nombres">
                     </div>
                     <div class="campo">
-                        <div class="label">Apellido Paterno: </div>
+                        <div class="label">Apellido Paterno: <b class="error" id="apellido1-error"></b></div>
                         <input type="text" id="apellido1" placeholder="Apellido Paterno">
                     </div>
                     <div class="campo">
-                        <div class="label">Apellido Materno: </div>
+                        <div class="label">Apellido Materno: <b class="error" id="apellido2-error"></b></div>
                         <input type="text" id="apellido2" placeholder="Apellido Materno">
                     </div>
-                    <div class="campo sigPag">
+                    <div class="campo sigPag" style="margin-bottom: 12px;">
                         <button>Siguiente</button>
                     </div>
                 </div>
@@ -69,11 +74,11 @@
                 <div class="pagina">
                     <div class="titulo">Informacion Secundaria</div>
                     <div class="campo">
-                        <div class="label">Fecha Nacimiento: </div>
+                        <div class="label">Fecha Nacimiento: <b class="error" id="fechaNac-error"></b></div>
                         <input type="date" id="fechaNac" max="2010-12-31" value="2010-02-03">
                     </div>
                     <div class="campo">
-                        <div class="label">Sexo: </div>
+                        <div class="label">Sexo: <b class="error" id="sexo-error"></b></div>
                         <select id="sexo">
                             <option value="-1" disabled selected>Escoge una opción.</option>
                             <option value="0">Masculino</option>
@@ -91,11 +96,11 @@
                 <div class="pagina">
                     <div class="titulo">Informacion Contacto</div>
                     <div class="campo">
-                        <div class="label">Correo electrónico: </div>
+                        <div class="label">Correo electrónico: <b class="error" id="correo-error"></b></div>
                         <input type="email" id="correo" placeholder="Correo Electrónico">
                     </div>
                     <div class="campo">
-                        <div class="label">Número telefonico: </div>
+                        <div class="label">Número telefonico: <b class="error" id="numCel-error"></b></div>
                         <input type="text" id="numCel" placeholder="Número Telefónico">
                     </div>
                     <div class="campo">
@@ -108,11 +113,11 @@
                 <div class="pagina">
                     <div class="titulo">Informacion de inicio de sesión</div>
                     <div class="campo">
-                        <div class="label">Nombre de usuario: </div>
+                        <div class="label">Nombre de usuario: <b class="error" id="usuario-error"></b></div>
                         <input type="text" id="usuario" placeholder="Nombre de usuario">
                     </div>
                     <div class="campo">
-                        <div class="label">Contraseña: </div>
+                        <div class="label">Contraseña: <b class="error" id="contra-error"></b></div>
                         <input type="password" id="contra" placeholder="Contraseña">
                         <span class="ojitos" onclick="mostrarContra()">
                             <i id="mostrar" class="fa fa-eye" title="Mostrar Contraseña"></i>
